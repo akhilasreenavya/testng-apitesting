@@ -1,14 +1,9 @@
-package org.example;
-import org.json.simple.JSONObject;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasItems;
+
+package com.apimethods.ar;
 
 
-public class Api {
+
+public class AllRequests{
     @Test(priority = 1)
     public void test1() {
 
@@ -20,6 +15,7 @@ public class Api {
         }
 
     @BeforeTest
+
     public void test2() {
 
         given().get("https://reqres.in/api/users?page=2").then().
