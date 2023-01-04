@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.hasItems;
 
 
 public class Api {
-    @Test
+    @Test(priority = 1)
     public void test1() {
 
             given().queryParam("CUSTOMER_ID","68195")
@@ -48,7 +48,7 @@ public class Api {
 
     }
 
-    @Test
+    @Test(priority = 2)
 
     public void test4() {
 
@@ -67,7 +67,7 @@ public class Api {
 
     }
 
-    @Test
+    @Test(priority = 3)
     public void test5() {
 
         JSONObject request = new JSONObject();
