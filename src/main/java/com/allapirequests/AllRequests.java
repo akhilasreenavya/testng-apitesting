@@ -1,7 +1,10 @@
 
-package com.apimethods.ar;
+package com.allapirequests;
 
 
+import org.junit.Test;
+
+import static io.restassured.path.json.JsonPath.given;
 
 public class AllRequests{
     @Test(priority = 1)
